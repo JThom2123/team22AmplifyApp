@@ -1,8 +1,7 @@
 
 "use client"
-import type { Metadata } from "next";
+
 import { Inter } from "next/font/google";
-import "./app.css";
 import React from "react";
 import { Amplify } from "aws-amplify";
 import "./app.css";
@@ -19,8 +18,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    
-    <html lang="en">
           
     <html lang="en">
       <body>      
@@ -28,8 +25,7 @@ export default function RootLayout({
           {children}
         </Authenticator>
       </body>
-    </html>
-      <body className={inter.className}>{children}</body>
+    
     </html>
   );
 }
