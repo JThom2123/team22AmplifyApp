@@ -1,7 +1,6 @@
-
 "use client"
-
 import { Inter } from "next/font/google";
+
 import React from "react";
 import { Amplify } from "aws-amplify";
 import "./app.css";
@@ -19,13 +18,11 @@ export default function RootLayout({
 }) {
   return (
           
-    <html lang="en">
       <body>      
         <Authenticator>
           {children}
         </Authenticator>
       </body>
     
-    </html>
   );
 }
